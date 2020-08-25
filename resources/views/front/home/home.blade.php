@@ -1,6 +1,6 @@
 @extends('layouts.layout')
 
-@section('title', 'MCCForum | Home')
+@section('title', 'MCC Forum | Home')
 
 @section('content')
 
