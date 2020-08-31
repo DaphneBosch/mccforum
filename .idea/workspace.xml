@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="57587300-32a3-4e9d-bda1-983f511636b2" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,15 +21,6 @@
         <option value="composer.json" />
       </list>
     </option>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>sidenav</find>
-      <find>search</find>
-      <find>sidebar-search</find>
-      <find>button</find>
-      <find>show-sidebar</find>
-    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -134,6 +128,7 @@
       <path value="$PROJECT_DIR$/vendor/sebastian/type" />
       <path value="$PROJECT_DIR$/vendor/sebastian/version" />
       <path value="$PROJECT_DIR$/vendor/theseer/tokenizer" />
+      <path value="$PROJECT_DIR$/vendor/laravel/ui" />
     </include_path>
   </component>
   <component name="ProjectId" id="1gbYg0N8vTTPwXsbzVI0szbsdaF" />
@@ -150,14 +145,16 @@
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Gebruiker\Documents\GitHub\mccforum\public\img\logos" />
+      <recent name="C:\Users\Gebruiker\Documents\GitHub\mccforum\public\img\wallpapers" />
+      <recent name="C:\Users\Gebruiker\Documents\GitHub\mccforum\public\img" />
+      <recent name="C:\Users\Daphn\Documents\GitHub\mccforum\mccforum\public\img\wallpapers" />
+      <recent name="C:\Users\Daphn\Documents\GitHub\mccforum\mccforum\public" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Daphn\Documents\GitHub\mccforum\mccforum\public\img\logos" />
       <recent name="C:\Users\Daphn\Documents\GitHub\mccforum\mccforum\public" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Daphn\Documents\GitHub\mccforum\mccforum\public\img\wallpapers" />
-      <recent name="C:\Users\Daphn\Documents\GitHub\mccforum\mccforum\public" />
-      <recent name="C:\Users\Daphn\Documents\GitHub\mccforum\mccforum\resources\views\front\home" />
     </key>
   </component>
   <component name="RunManager">
@@ -182,7 +179,13 @@
       <workItem from="1598386068867" duration="481000" />
       <workItem from="1598386560121" duration="227000" />
       <workItem from="1598386795972" duration="575000" />
-      <workItem from="1598387381031" duration="937000" />
+      <workItem from="1598387381031" duration="967000" />
+      <workItem from="1598423920535" duration="1294000" />
+      <workItem from="1598509963389" duration="11298000" />
+      <workItem from="1598522018769" duration="1846000" />
+      <workItem from="1598532571630" duration="3669000" />
+      <workItem from="1598595651381" duration="7401000" />
+      <workItem from="1598856208010" duration="17003000" />
     </task>
     <servers />
   </component>
@@ -190,6 +193,14 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="724" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1598603461360">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="724" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1598603461360" />
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1598862134235">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1598862134235" />
     <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1598387417705">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -206,5 +217,21 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1598387417705" />
+    <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1598862694517">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1598862694517" />
+    <state x="616" y="240" width="672" height="677" key="run.anything.popup" timestamp="1598865384188">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="616" y="240" width="672" height="677" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1598865384188" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1598866025293">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1598866025293" />
+    <state x="682" y="432" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1598515144314">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="682" y="432" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1598515144314" />
   </component>
 </project>
