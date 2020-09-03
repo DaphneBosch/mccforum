@@ -17,7 +17,7 @@ class CreatePostersTable extends Migration
             $table->id();
             $table->string('username');
             $table->string('title');
-            $table->integer('category_id');
+            $table->string('category');
             $table->longText('text');
             $table->timestamps();
         });

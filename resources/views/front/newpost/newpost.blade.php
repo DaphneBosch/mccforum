@@ -12,7 +12,7 @@
 
         <div class="makeposts">
 
-            <form method="POST" action="/home/mededelingen/storeAnnouncement">
+            <form method="POST" action="/newpost/store">
 
                 {{ csrf_field() }}
 
@@ -28,13 +28,17 @@
                         <option value="introductions">Introductions</option>
                         <option value="feedsug">Feedback & Suggestions</option>
                         <option value="offtopic">Off-Topic</option>
+                        <option value="bugreports">Bug Reports</option>
+                        <option value="storeissues">Store Issues</option>
+                        <option value="reportusers">Report Users</option>
+                        <option value="appeals">Appeals</option>
+                        <option value="staffreports">Staff Reports</option>
                     </select>
 
                 </div>
                 <div>
                     <label>Username</label>
-                    <input type="text" name="username" placeholder="Username">
-
+                    <input type="text" name="username" value="{{ old('name', auth()->user()->name) }}">
                 </div>
 
                 <div>

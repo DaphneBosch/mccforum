@@ -21,6 +21,7 @@ body, html {
 .nav-link-role {
     color: gray !important;
     font-size: 40px !important;
+    text-align: center;
     font-family: 'Raleway', sans-serif !important;
     padding-right: 20px !important;
 }
@@ -534,6 +535,48 @@ body {
       }
 
   }
+
+    img {
+        position: relative;
+        left: 46.8%;
+    }
+}
+
+.forumposts {
+    .card-header {
+        h4 {
+            text-align: center;
+            font-weight: 900;
+            font-family: "Raleway", sans-serif;
+            text-transform: uppercase;
+        }
+    }
+
+    .card-text {
+        font-weight: bold;
+        color: gray;
+
+        .cool-link {
+            display: inline-block;
+            color: gray;
+            text-decoration: none;
+        }
+
+        .cool-link::after {
+            content: '';
+            display: block;
+            width: 0;
+            height: 2px;
+            background: red;
+            transition: width .3s;
+        }
+
+        .cool-link:hover::after {
+            width: 100%;
+            //transition: width .3s;
+        }
+
+    }
 
     img {
         position: relative;

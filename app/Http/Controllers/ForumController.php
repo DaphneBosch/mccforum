@@ -3,13 +3,9 @@
 namespace App\Http\Controllers;
 
 use App\Poster;
-use http\Client\Response;
-use Illuminate\Http\File;
-use Illuminate\Http\Request;
-use Illuminate\Support\Facades\DB;
-use Illuminate\Support\Facades\Storage;
+use Illuminate\Database\Eloquent\Model;
 
-class HomeController extends Controller
+class ForumController extends Model
 {
     /**
      * Create a new controller instance.
@@ -26,8 +22,9 @@ class HomeController extends Controller
      */
     public function index()
     {
+        $poster = Poster::all()->take(5);
         $posterrecent = Poster::orderBy('id', 'desc')->take(5)->get();
 
-        return view('front.home.home')->with('posterrecent', $posterrecent);
+        return view('front.forum.forum')->with('poster', $poster)->with('posterrecent', $posterrecent);
     }
 }

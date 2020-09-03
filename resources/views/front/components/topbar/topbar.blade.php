@@ -1,6 +1,6 @@
 <div class="page-wrapper chiller-theme toggled">
     <div class="mccity"
-         style="background-image: url('{{asset('/img/wallpapers/mcc2.jpg')}}'); background-repeat: no-repeat; background-size: cover ">
+         style="background-image: url('{{asset('/img/wallpapers/mcclight.png')}}'); background-repeat: no-repeat; background-size: cover ">
 
     </div>
     <div id="show-sidebar" class="btn btn-sm btn-dark">
@@ -9,7 +9,7 @@
     <nav id="sidebar" class="sidebar-wrapper">
         <div class="sidebar-content">
             <div class="sidebar-brand">
-                <a href="/"><img src="https://minecraftercity.com/images/logo.png" style="max-width: 170px"></a>
+                <a href="/"><img src="https://minecraftercity.com/images/logo.png" style="max-width: 120px"></a>
                 <div id="close-sidebar">
                     <i class="fas fa-times"></i>
                 </div>
@@ -41,13 +41,19 @@
                     </li>
                     @else
                         <li class="sidebar">
-                            <a class="nav-link-role" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                            <img src="{{ asset(auth()->user()->image) }}" style="width: 60px; height: 60px; border-radius: 50%; margin-left: 105px;">
+                            <a class="nav-link-role" href="/profile" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                 {{ Auth::user()->name }}
                             </a>
+
+                            <a class="nav-link" href="/profile">
+                                <i class="fas fa-user"></i>
+                                Profile</a>
 
                                 <a class="nav-link" href="{{ route('logout') }}"
                                    onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
+                                    <i class="fas fa-sign-out-alt"></i>
                                     {{ __('Logout') }}
                                 </a>
 
