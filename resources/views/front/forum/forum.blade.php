@@ -78,24 +78,24 @@
                     <div class="card bg-light mb-3 justify-content-center">
                         <div class="card-header"><h4 style="text-transform: uppercase">Server Issues</h4></div>
                         <div class="card-body">
-                            <p class="card-text">Bug Reports</p>
+                            <p class="card-text"><a class="cool-link" href="/bugreports">Bug Reports</a></p>
                             <img src="{{asset('/img/logos/image0.png')}}" style="max-width: 100px;">
                             <hr>
                         </div>
                         <div class="card-body">
-                            <p class="card-text">Store Issues</p>
+                            <p class="card-text"><a class="cool-link" href="/storeissues">Store Issues</a></p>
                             <hr>
                         </div>
                         <div class="card-body">
-                            <p class="card-text">Report Users</p>
+                            <p class="card-text"><a class="cool-link" href="/reportusers">Report Users</a></p>
                             <hr>
                         </div>
                         <div class="card-body">
-                            <p class="card-text">Appeals</p>
+                            <p class="card-text"><a class="cool-link" href="/appeals">Appeals</a></p>
                             <hr>
                         </div>
                         <div class="card-body">
-                            <p class="card-text">Staff Reports</p>
+                            <p class="card-text"><a class="cool-link" href="/staffreports">Staff Reports</a></p>
                         </div>
                     </div>
                 </div>
@@ -133,7 +133,7 @@
                     <div class="card bg-light mb-3 justify-content-center">
                         <div class="card-header"><h4 style="text-transform: uppercase">Join MCC Staff</h4></div>
                         <div class="card-body">
-                            <p class="card-text">Support Team</p>
+                            <p class="card-text"><a class="cool-link" href="/supportteam">Support Team</a></p>
                             <img src="{{asset('/img/logos/image0.png')}}" style="max-width: 100px;">
                             <hr>
                         </div>

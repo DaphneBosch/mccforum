@@ -40,6 +40,7 @@
                             </div>
 
                         @endforeach
+                        {{ $poster->render() }}
                     </div>
                 </div>
             </div>
@@ -47,10 +48,11 @@
                 <div class="card bg-light mb-3 justify-content-center">
                     <div class="recentposts">
                         <div class="card-header"><h4>Recent posts</h4></div>
-                        @foreach($poster as $posts)
+                        @foreach($posterrecent as $recent)
                             <div class="card-body">
-                                <p class="card-text">{{$posts->title}}</p>
-                                <p class="card-text">{{$posts->username}}</p>
+                                <p class="card-text">{{$recent->title}}</p>
+                                <p class="card-text">{{$recent->category}}</p>
+                                <p class="card-text">{{$recent->username}}</p>
                                 <hr>
                             </div>
 

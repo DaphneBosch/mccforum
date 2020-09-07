@@ -1,6 +1,6 @@
 @extends('layouts.layout')
 
-@section('title', 'MCC Forum | Introductions')
+@section('title', 'MCC Forum | Report Users')
 
 @section('content')
 
@@ -27,12 +27,12 @@
             <div class="col-10">
                 <div class="forumposts">
                     <div class="card bg-light mb-3 justify-content-center">
-                        <div class="card-header"><h4>Introductions</h4></div>
+                        <div class="card-header"><h4>Report Users</h4></div>
 
                         @foreach($poster as $posts)
                             <div class="card-body">
                                 <div class="row">
-                                    <div class="col-4"><p class="card-text"><a class="nav-link" href="/introductions/{{$posts->id}}">{{ $posts->title }}</a></p></div>
+                                    <div class="col-4"><p class="card-text">{{ $posts->title }}</p></div>
                                     <div class="col-7"><p class="card-text">{{ $posts->text }}</p></div>
                                     <div class="col-1"><p class="card-text">{{ $posts->username }}</p></div>
                                 </div>

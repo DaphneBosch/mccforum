@@ -23,10 +23,10 @@ class IntroController extends Controller
      */
     public function index()
     {
-        $poster = DB::select("select * from posters where category = 'introductions'", [1]);
+        $poster = DB::table('posters')->where('category', 'introductions')->orderByDesc('id')->paginate(10);
+        $posterrecent = Poster::orderBy('id', 'desc')->take(5)->get();
 
-
-        return view('front.forum.introductions.introductions')->with('poster', $poster);
+        return view('front.forum.introductions.introductions')->with('poster', $poster)->with('posterrecent', $posterrecent);
     }
 
     public function getPost(Request $request) {

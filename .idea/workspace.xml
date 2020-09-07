@@ -145,18 +145,18 @@
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Gebruiker\Documents\GitHub\mccforum\app\Http\Controllers" />
-      <recent name="C:\Users\Gebruiker\Documents\GitHub\mccforum\public\img\wallpapers" />
-      <recent name="C:\Users\Daphn\Documents\GitHub\mccforum\mccforum\public\img\logos" />
-      <recent name="C:\Users\Daphn\Documents\GitHub\mccforum\mccforum\public" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Gebruiker\Documents\GitHub\mccforum\app\Http\Controllers" />
       <recent name="C:\Users\Gebruiker\Documents\GitHub\mccforum\public\img\logos" />
       <recent name="C:\Users\Gebruiker\Documents\GitHub\mccforum\resources\views\back" />
       <recent name="C:\Users\Gebruiker\Documents\GitHub\mccforum\resources\views\back\panel" />
       <recent name="C:\Users\Gebruiker\Documents\GitHub\mccforum\resources\views\auth" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Gebruiker\Documents\GitHub\mccforum\app\Http\Controllers" />
+      <recent name="C:\Users\Gebruiker\Documents\GitHub\mccforum\public\img\wallpapers" />
+      <recent name="C:\Users\Daphn\Documents\GitHub\mccforum\mccforum\public\img\logos" />
+      <recent name="C:\Users\Daphn\Documents\GitHub\mccforum\mccforum\public" />
     </key>
   </component>
   <component name="RunManager">
@@ -191,6 +191,12 @@
       <workItem from="1598880824167" duration="3781000" />
       <workItem from="1599032056912" duration="15787000" />
       <workItem from="1599114629336" duration="12538000" />
+      <workItem from="1599140048191" duration="501000" />
+      <workItem from="1599206163510" duration="635000" />
+      <workItem from="1599215944967" duration="3972000" />
+      <workItem from="1599340654728" duration="2000" />
+      <workItem from="1599407203660" duration="2000" />
+      <workItem from="1599468020316" duration="7262000" />
     </task>
     <servers />
   </component>
@@ -198,14 +204,18 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="724" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1598603461360">
+    <state x="336" y="361" key="#SQL_Dialects" timestamp="1599219646208">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="724" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1598603461360" />
-    <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1599118407336">
+    <state x="336" y="361" key="#SQL_Dialects/0.0.1920.1040@0.0.1920.1040" timestamp="1599219646208" />
+    <state x="724" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1599482491120">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1599118407336" />
+    <state x="724" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1599482491120" />
+    <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1599482583141">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1599482583141" />
     <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1598862134235">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

@@ -23,18 +23,21 @@ Route::get('logout', '\App\Http\Controllers\Auth\LoginController@logout');
 Route::post('/newpost/store', ['uses' => '\App\Http\Controllers\PosterController@storePost']);
 Route::get('/creations', ['uses' => '\App\Http\Controllers\CreationsController@index']);
 Route::get('/events', ['uses' => '\App\Http\Controllers\EventsController@index']);
+Route::get('/bugreports', ['uses' => '\App\Http\Controllers\BugReportsController@index']);
+Route::get('/storeissues', ['uses' => '\App\Http\Controllers\StoreIssuesController@index']);
+Route::get('/reportusers', ['uses' => '\App\Http\Controllers\ReportUserController@index']);
+Route::get('/appeals', ['uses' => '\App\Http\Controllers\AppealsController@index']);
+Route::get('/staffreports', ['uses' => '\App\Http\Controllers\StaffReportsController@index']);
+Route::get('/supportteam', ['uses' => '\App\Http\Controllers\SupportTeamController@index']);
 Route::get('/feedback-suggestions', ['uses' => '\App\Http\Controllers\FeedSuggController@index']);
 Route::get('/off-topic', ['uses' => '\App\Http\Controllers\OfftopicController@index']);
+Route::get('/members', ['uses' => '\App\Http\Controllers\MemberController@index']);
 Route::get('/introductions', ['uses' => '\App\Http\Controllers\IntroController@index']);
 Route::get('/profile', 'ProfileController@index')->name('profile');
 Route::post('/profile/update', 'ProfileController@updateProfile')->name('profile.update');
 
 Route::get('/admin', function () {
     return view('back.adminlogin.adminlogin');
-});
-
-Route::get('/members', function () {
-    return view('front.members.members');
 });
 
 Route::get('/forums', ['uses' => '\App\Http\Controllers\ForumController@index']);

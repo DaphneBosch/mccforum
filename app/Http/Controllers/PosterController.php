@@ -24,8 +24,7 @@ class PosterController extends Model
 
         $poster->save();
 
-        return redirect('/');
-
+        return redirect()->back()->with(['status' => 'Post created!']);
     }
 
 }

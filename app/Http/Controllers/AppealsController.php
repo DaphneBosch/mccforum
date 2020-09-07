@@ -6,7 +6,7 @@ use App\Poster;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
-class OfftopicController extends Controller
+class AppealsController extends Controller
 {
     /**
      * Create a new controller instance.
@@ -23,9 +23,9 @@ class OfftopicController extends Controller
      */
     public function index()
     {
-        $poster = DB::table('posters')->where('category', 'offtopic')->orderByDesc('id')->paginate(10);
+        $poster = DB::table('posters')->where('category', 'appeals')->orderByDesc('id')->paginate(10);
         $posterrecent = Poster::orderBy('id', 'desc')->take(5)->get();
 
-        return view('front.forum.offtopic.offtopic')->with('poster', $poster)->with('posterrecent', $posterrecent);
+        return view('front.forum.appeals.appeals')->with('poster', $poster)->with('posterrecent', $posterrecent);
     }
 }

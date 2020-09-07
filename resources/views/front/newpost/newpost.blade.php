@@ -16,6 +16,12 @@
 
                 {{ csrf_field() }}
 
+                @if (session('status'))
+                    <div class="alert alert-success" role="alert">
+                        {{ session('status') }}
+                    </div>
+                @endif
+
                 <div>
                     <label>Title</label>
                     <input type="text" name="title" placeholder="Title">
@@ -33,6 +39,9 @@
                         <option value="reportusers">Report Users</option>
                         <option value="appeals">Appeals</option>
                         <option value="staffreports">Staff Reports</option>
+                        <option value="supportteam">Support Team</option>
+                        <option value="buildersteam">Builders Team</option>
+                        <option value="adminsteam">Admins Team</option>
                     </select>
 
                 </div>

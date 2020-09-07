@@ -23,9 +23,12 @@ class CreationsController extends Controller
      */
     public function index()
     {
-        $poster = DB::select("select * from posters where category = 'creations'", [1]);
+//        $poster = DB::select("SELECT * FROM posters WHERE category = 'creations' ORDER BY 'id' DESC");
 
-        return view('front.forum.creations.creations')->with('poster', $poster);
+        $poster = DB::table('posters')->where('category', 'creations')->orderByDesc('id')->paginate(10);
+        $posterrecent = Poster::orderBy('id', 'desc')->take(5)->get();
+
+        return view('front.forum.creations.creations')->with('poster', $poster)->with('posterrecent', $posterrecent);
     }
 
     public function getPost(Request $request) {

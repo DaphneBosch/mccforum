@@ -3,10 +3,11 @@
 namespace App\Http\Controllers;
 
 use App\Poster;
-use Illuminate\Http\Request;
+use App\User;
+use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\DB;
 
-class OfftopicController extends Controller
+class MemberController extends Model
 {
     /**
      * Create a new controller instance.
@@ -14,7 +15,8 @@ class OfftopicController extends Controller
      * @return void
      */
     public function __construct()
-    {}
+    {
+    }
 
     /**
      * Show the application dashboard.
@@ -23,9 +25,9 @@ class OfftopicController extends Controller
      */
     public function index()
     {
-        $poster = DB::table('posters')->where('category', 'offtopic')->orderByDesc('id')->paginate(10);
         $posterrecent = Poster::orderBy('id', 'desc')->take(5)->get();
+        $users = DB::table('users')->orderbyDesc('id')->paginate(10);
 
-        return view('front.forum.offtopic.offtopic')->with('poster', $poster)->with('posterrecent', $posterrecent);
+        return view('front.members.members')->with('posterrecent', $posterrecent)->with('users', $users);
     }
 }

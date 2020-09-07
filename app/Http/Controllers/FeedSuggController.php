@@ -23,8 +23,9 @@ class FeedSuggController extends Controller
      */
     public function index()
     {
-        $poster = DB::select("select * from posters where category = 'feedsug'", [1]);
+        $poster = DB::table('posters')->where('category', 'feedsug')->orderByDesc('id')->paginate(10);
+        $posterrecent = Poster::orderBy('id', 'desc')->take(5)->get();
 
-        return view('front.forum.feedsugg.feedsugg')->with('poster', $poster);
+        return view('front.forum.feedsugg.feedsugg')->with('poster', $poster)->with('posterrecent', $posterrecent);
     }
 }
