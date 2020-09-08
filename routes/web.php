@@ -23,6 +23,8 @@ Route::get('logout', '\App\Http\Controllers\Auth\LoginController@logout');
 Route::post('/newpost/store', ['uses' => '\App\Http\Controllers\PosterController@storePost']);
 Route::get('/creations', ['uses' => '\App\Http\Controllers\CreationsController@index']);
 Route::get('/events', ['uses' => '\App\Http\Controllers\EventsController@index']);
+Route::get('/buildersteam', ['uses' => '\App\Http\Controllers\BuildersTeamController@index']);
+Route::get('/adminsteam', ['uses' => '\App\Http\Controllers\AdminsTeamController@index']);
 Route::get('/bugreports', ['uses' => '\App\Http\Controllers\BugReportsController@index']);
 Route::get('/storeissues', ['uses' => '\App\Http\Controllers\StoreIssuesController@index']);
 Route::get('/reportusers', ['uses' => '\App\Http\Controllers\ReportUserController@index']);

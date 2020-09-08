@@ -138,11 +138,11 @@
                             <hr>
                         </div>
                         <div class="card-body">
-                            <p class="card-text">Builders Team</p>
+                            <p class="card-text"><a class="cool-link" href="/buildersteam">Builders Team</a></p>
                             <hr>
                         </div>
                         <div class="card-body">
-                            <p class="card-text">Admins Team</p>
+                            <p class="card-text"><a class="cool-link" href="/adminsteam">Admins Team</a></p>
                         </div>
                     </div>
                 </div>
