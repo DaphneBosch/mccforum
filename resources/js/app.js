@@ -5,8 +5,11 @@
  */
 
 require('./bootstrap');
+// import VueResource from "vue-resource"
 
 window.Vue = require('vue');
+// Vue.use(VueResource);
+// Vue.component('comment', require('./components/Comments.vue'));
 
 /**
  * The following block of code may be used to automatically register your

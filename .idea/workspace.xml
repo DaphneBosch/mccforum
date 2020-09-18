@@ -139,24 +139,24 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/Http/Controllers" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Gebruiker\Documents\GitHub\mccforum\app\Http\Controllers" />
+      <recent name="C:\Users\Gebruiker\Documents\GitHub\mccforum\public\img\wallpapers" />
+      <recent name="C:\Users\Daphn\Documents\GitHub\mccforum\mccforum\public\img\logos" />
+      <recent name="C:\Users\Daphn\Documents\GitHub\mccforum\mccforum\public" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Gebruiker\Documents\GitHub\mccforum\app\Http\Controllers" />
       <recent name="C:\Users\Gebruiker\Documents\GitHub\mccforum\public\img\logos" />
       <recent name="C:\Users\Gebruiker\Documents\GitHub\mccforum\resources\views\back" />
       <recent name="C:\Users\Gebruiker\Documents\GitHub\mccforum\resources\views\back\panel" />
       <recent name="C:\Users\Gebruiker\Documents\GitHub\mccforum\resources\views\auth" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Gebruiker\Documents\GitHub\mccforum\app\Http\Controllers" />
-      <recent name="C:\Users\Gebruiker\Documents\GitHub\mccforum\public\img\wallpapers" />
-      <recent name="C:\Users\Daphn\Documents\GitHub\mccforum\mccforum\public\img\logos" />
-      <recent name="C:\Users\Daphn\Documents\GitHub\mccforum\mccforum\public" />
     </key>
   </component>
   <component name="RunManager">
@@ -198,7 +198,15 @@
       <workItem from="1599407203660" duration="2000" />
       <workItem from="1599468020316" duration="7262000" />
       <workItem from="1599489950974" duration="1602000" />
-      <workItem from="1599561217412" duration="634000" />
+      <workItem from="1599561217412" duration="5978000" />
+      <workItem from="1599583789927" duration="596000" />
+      <workItem from="1599650635946" duration="322000" />
+      <workItem from="1599652053186" duration="2171000" />
+      <workItem from="1599660472837" duration="2793000" />
+      <workItem from="1599720932913" duration="5949000" />
+      <workItem from="1599845466956" duration="4000" />
+      <workItem from="1600168999260" duration="9772000" />
+      <workItem from="1600413570405" duration="16547000" />
     </task>
     <servers />
   </component>
@@ -214,10 +222,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="724" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1599482491120" />
-    <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1599492658712">
+    <state x="641" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1600420709141">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1599492658712" />
+    <state x="641" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1600420709141" />
+    <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1600429877718">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1600429877718" />
     <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1598862134235">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -242,14 +254,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1598862694517" />
-    <state x="616" y="240" width="672" height="677" key="run.anything.popup" timestamp="1599037834502">
+    <state x="616" y="240" width="672" height="677" key="run.anything.popup" timestamp="1599568070776">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="616" y="240" width="672" height="677" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1599037834502" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1599122234198">
+    <state x="616" y="240" width="672" height="677" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1599568070776" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1600172420377">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1599122234198" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1600172420377" />
     <state x="682" y="432" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1599116422575">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

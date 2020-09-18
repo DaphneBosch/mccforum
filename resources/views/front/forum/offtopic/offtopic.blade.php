@@ -62,7 +62,7 @@
         </div>
         <div class="row justify-content-end">
             <div class="col-2">
-                <div class="card bg-light mb-3 justify-content-right">
+                <div class="card bg-light mb-3 justify-content-center">
                     <div class="recentposts">
                         <div class="card-header"><h4>Online Staff</h4></div>
                         <div class="card-body">
@@ -83,6 +83,9 @@
                         </div>
                         <div class="card-body">
                             <p class="card-text">Post 5 </p>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">Registered users: {{$registeredusers}}</p>
                         </div>
                     </div>
                 </div>

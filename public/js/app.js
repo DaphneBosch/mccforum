@@ -49720,9 +49720,12 @@ module.exports = function(module) {
  * includes Vue and other libraries. It is a great starting point when
  * building robust, powerful web applications using Vue and Laravel.
  */
-__webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
+__webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js"); // import VueResource from "vue-resource"
 
-window.Vue = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.common.js");
+
+window.Vue = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.common.js"); // Vue.use(VueResource);
+// Vue.component('comment', require('./components/Comments.vue'));
+
 /**
  * The following block of code may be used to automatically register your
  * Vue components. It will recursively scan this directory for the Vue

@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Poster;
+use App\Post;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
@@ -23,9 +23,12 @@ class ReportUserController extends Controller
      */
     public function index()
     {
-        $poster = DB::table('posters')->where('category', 'reportusers')->orderByDesc('id')->paginate(10);
-        $posterrecent = Poster::orderBy('id', 'desc')->take(5)->get();
+        $poster = DB::table('posts')->where('category', 'reportusers')->orderByDesc('id')->paginate(10);
+        $posterrecent = Post::orderBy('id', 'desc')->take(5)->get();
+        $registeredusers = DB::table('users')->count();
 
-        return view('front.forum.reportusers.reportusers')->with('poster', $poster)->with('posterrecent', $posterrecent);
+        return view('front.forum.reportusers.reportusers')->with('poster', $poster)->with('posterrecent', $posterrecent)->with(
+            'registeredusers', $registeredusers
+        );
     }
 }

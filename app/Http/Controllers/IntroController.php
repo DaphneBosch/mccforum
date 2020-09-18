@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Poster;
+use App\Post;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
@@ -23,16 +23,17 @@ class IntroController extends Controller
      */
     public function index()
     {
-        $poster = DB::table('posters')->where('category', 'introductions')->orderByDesc('id')->paginate(10);
-        $posterrecent = Poster::orderBy('id', 'desc')->take(5)->get();
+        $poster = DB::table('posts')->where('category', 'introductions')->orderByDesc('id')->paginate(10);
+        $posterrecent = Post::orderBy('id', 'desc')->take(5)->get();
+        $registeredusers = DB::table('users')->count();
 
-        return view('front.forum.introductions.introductions')->with('poster', $poster)->with('posterrecent', $posterrecent);
+        return view('front.forum.introductions.introductions')->with('poster', $poster)->with('posterrecent', $posterrecent)->with('registeredusers', $registeredusers);
     }
 
     public function getPost(Request $request) {
 
         $request->id;
-        $getPost = Poster::find($request->id);
+        $getPost = Post::find($request->id);
 
         return view('front.forum.introductions.introdetail')->with('getPost', $getPost);
     }

@@ -30,24 +30,42 @@
                 <div>
                     <label>Category</label>
                     <select id="category" name="category">
-                        <option value="creations">Creations</option>
-                        <option value="introductions">Introductions</option>
-                        <option value="feedsug">Feedback & Suggestions</option>
-                        <option value="offtopic">Off-Topic</option>
-                        <option value="bugreports">Bug Reports</option>
-                        <option value="storeissues">Store Issues</option>
-                        <option value="reportusers">Report Users</option>
-                        <option value="appeals">Appeals</option>
-                        <option value="staffreports">Staff Reports</option>
-                        <option value="supportteam">Support Team</option>
-                        <option value="buildersteam">Builders Team</option>
-                        <option value="adminsteam">Admins Team</option>
+                        @if($adminer->role == 'admin')
+                            <option value="creations">Creations</option>
+                            <option value="introductions">Introductions</option>
+                            <option value="feedsug">Feedback & Suggestions</option>
+                            <option value="offtopic">Off-Topic</option>
+                            <option value="bugreports">Bug Reports</option>
+                            <option value="storeissues">Store Issues</option>
+                            <option value="reportusers">Report Users</option>
+                            <option value="appeals">Appeals</option>
+                            <option value="staffreports">Staff Reports</option>
+                            <option value="supportteam">Support Team</option>
+                            <option value="buildersteam">Builders Team</option>
+                            <option value="adminsteam">Admins Team</option>
+                            <option value="news">News</option>
+                            <option value="server">Server</option>
+                            <option value="events">Events</option>
+                        @else
+                            <option value="creations">Creations</option>
+                            <option value="introductions">Introductions</option>
+                            <option value="feedsug">Feedback & Suggestions</option>
+                            <option value="offtopic">Off-Topic</option>
+                            <option value="bugreports">Bug Reports</option>
+                            <option value="storeissues">Store Issues</option>
+                            <option value="reportusers">Report Users</option>
+                            <option value="appeals">Appeals</option>
+                            <option value="staffreports">Staff Reports</option>
+                            <option value="supportteam">Support Team</option>
+                            <option value="buildersteam">Builders Team</option>
+                            <option value="adminsteam">Admins Team</option>
+                        @endif
                     </select>
 
                 </div>
                 <div>
                     <label>Username</label>
-                    <input type="text" name="username" value="{{ old('name', auth()->user()->name) }}">
+                    <input type="text" name="username" value="{{ old('name', auth()->user()->name) }}" readonly>
                 </div>
 
                 <div>
@@ -56,6 +74,13 @@
 
                 </div>
                 <div>
+
+{{--                    <div class="form-group row">--}}
+{{--                        <label for="profile_image" class="col-md-4 col-form-label text-md-right">Upload an image</label>--}}
+{{--                        <div class="col-md-6">--}}
+{{--                            <input id="upload_image" type="file" class="form-control" name="upload_inage">--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
 
                     <button class="btn btn-danger" type="submit">Create post!</button>
 

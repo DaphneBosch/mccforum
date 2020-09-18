@@ -2,8 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use App\Poster;
+use App\Post;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class EventsController extends Controller
 {
@@ -22,8 +23,12 @@ class EventsController extends Controller
      */
     public function index()
     {
-        $poster = Poster::all()->take(5);
+        $poster = DB::table('posts')->where('category', 'events')->orderByDesc('id')->paginate(10);
+        $posterrecent = Post::orderBy('id', 'desc')->take(5)->get();
+        $registeredusers = DB::table('users')->count();
 
-        return view('front.forum.events.events')->with('poster', $poster);
+        return view('front.forum.events.events')->with('poster', $poster)->with('posterrecent', $posterrecent)->with(
+            'registeredusers', $registeredusers
+        );
     }
 }

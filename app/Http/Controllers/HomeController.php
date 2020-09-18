@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Poster;
+use App\Post;
 use http\Client\Response;
 use Illuminate\Http\File;
 use Illuminate\Http\Request;
@@ -26,8 +26,12 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $posterrecent = Poster::orderBy('id', 'desc')->take(5)->get();
+        $posterrecent = Post::orderBy('id', 'desc')->take(5)->get();
+        $newsflash = DB::table('posts')->where('category', 'news')->orderByDesc('id')->get()->take(10);
+        $serverpost = DB::table('posts')->where('category', 'server')->orderByDesc('id')->get()->take(10);
+        $registeredusers = DB::table('users')->count();
 
-        return view('front.home.home')->with('posterrecent', $posterrecent);
+
+        return view('front.home.home')->with('posterrecent', $posterrecent)->with('newsflash', $newsflash)->with('serverpost', $serverpost)->with('registeredusers', $registeredusers);
     }
 }

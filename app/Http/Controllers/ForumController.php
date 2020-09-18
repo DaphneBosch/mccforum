@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Poster;
+use App\Post;
 use Illuminate\Database\Eloquent\Model;
 
 class ForumController extends Model
@@ -22,8 +22,8 @@ class ForumController extends Model
      */
     public function index()
     {
-        $poster = Poster::all()->take(5);
-        $posterrecent = Poster::orderBy('id', 'desc')->take(5)->get();
+        $poster = Post::all()->take(5);
+        $posterrecent = Post::orderBy('id', 'desc')->take(5)->get();
 
         return view('front.forum.forum')->with('poster', $poster)->with('posterrecent', $posterrecent);
     }

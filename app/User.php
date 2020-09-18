@@ -17,7 +17,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password', 'profile_image',
+        'name', 'email', 'password','profile_image','role',
     ];
 
     /**
@@ -41,5 +41,11 @@ class User extends Authenticatable
     public function getImageAttribute()
     {
         return $this->profile_image;
+    }
+
+    public function posts() {
+
+        return $this->hasMany(Post::class);
+
     }
 }

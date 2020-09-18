@@ -18,9 +18,18 @@ Auth::routes();
 
 Route::get('/', 'HomeController@index');
 Route::get('/creations/{id}',['uses' => '\App\Http\Controllers\CreationsController@getPost']);
+Route::post('/creations/{id}/store',['uses' => '\App\Http\Controllers\CommentController@store']);
 Route::get('/introductions/{id}',['uses' => '\App\Http\Controllers\IntroController@getPost']);
+
+Route::post('/creations/{id}/store', 'CommentController@store')->name('comment.add');
+Route::post('/creations/{id}/reply/store', 'CommentController@replyStore')->name('reply.add');
+
+
 Route::get('logout', '\App\Http\Controllers\Auth\LoginController@logout');
-Route::post('/newpost/store', ['uses' => '\App\Http\Controllers\PosterController@storePost']);
+Route::post('/newpost/store', ['uses' => '\App\Http\Controllers\PostController@store']);
+Route::get('/newpost', ['uses' => '\App\Http\Controllers\PostController@index']);
+Route::get('/news', ['uses' => '\App\Http\Controllers\NewsController@index']);
+Route::get('/help', ['uses' => '\App\Http\Controllers\HelpController@index']);
 Route::get('/creations', ['uses' => '\App\Http\Controllers\CreationsController@index']);
 Route::get('/events', ['uses' => '\App\Http\Controllers\EventsController@index']);
 Route::get('/buildersteam', ['uses' => '\App\Http\Controllers\BuildersTeamController@index']);
@@ -48,6 +57,9 @@ Route::get('/vote', function () {
     return view('front.vote.vote');
 });
 
-Route::get('/newpost', function () {
-    return view('front.newpost.newpost');
-});
+//Route::get('/{pageId}', function($pageId){
+//    return view('page',['pageId' => $pageId]);
+//});
+//Route::get('comments/{pageId}', ['uses' => '\App\Http\Controllers\CommentController@index']);
+//Route::post('comments', ['uses' => '\App\Http\Controllers\CommentController@store']);
+//Route::post('comments/{commentId}/{type}', ['uses' => '\App\Http\Controllers\CommentController@update']);

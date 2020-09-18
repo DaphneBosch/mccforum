@@ -41,7 +41,12 @@
                     </li>
                     @else
                         <li class="sidebar">
+                            @if ( Auth::user()->profile_image == null)
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/a/ad/Placeholder_no_text.svg" style="width: 60px; height: 60px; border-radius: 50%; margin-left: 105px;">
+
+                            @else
                             <img src="{{ asset(auth()->user()->image) }}" style="width: 60px; height: 60px; border-radius: 50%; margin-left: 105px;">
+                            @endif
                             <a class="nav-link-role" href="/profile" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                 {{ Auth::user()->name }}
                             </a>
@@ -106,7 +111,7 @@
                         </a>
                     </li>
                     <li class="sidebar-dropdown">
-                        <a href="#">
+                        <a href="/news">
                             <i class="far fa-newspaper"></i>
                             <span>News</span>
                             <span class="badge badge-pill badge-primary">W.I.P</span>
@@ -120,7 +125,7 @@
                         </a>
                     </li>
                     <li class="sidebar-dropdown">
-                        <a href="#">
+                        <a href="/help">
                             <i class="far fa-question-circle"></i>
                             <span>Help</span>
                             <span class="badge badge-pill badge-primary">W.I.P</span>

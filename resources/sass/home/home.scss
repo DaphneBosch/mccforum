@@ -509,6 +509,13 @@ body {
      }
  }
 
+    .card-title {
+        text-align: center;
+        font-weight: bold;
+        color: black;
+        font-size: 25px;
+    }
+
   .card-text {
     text-align: center;
       font-weight: bold;
@@ -745,5 +752,20 @@ body {
     img {
         position: relative;
         left: 46.8%;
+    }
+}
+
+.commandcreate {
+    button[type=submit] {
+        background-color: red;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-family: "Raleway", sans-serif;
+        margin-top: 20px;
+        text-transform: uppercase;
+        font-weight: 900;
     }
 }
