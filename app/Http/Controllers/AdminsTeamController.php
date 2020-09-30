@@ -31,4 +31,12 @@ class AdminsTeamController extends Controller
             'registeredusers', $registeredusers
         );
     }
+
+    public function getPost(Request $request) {
+
+        $getPost = Post::find($request->id);
+        $comments = $getPost->comments()->get();
+
+        return view('front.forum.adminsteam.adminsteamdetail')->with('getPost', $getPost)->with('comments', $comments);
+    }
 }

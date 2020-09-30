@@ -31,4 +31,13 @@ class StoreIssuesController extends Controller
             'registeredusers', $registeredusers
         );
     }
+
+    public function getPost(Request $request) {
+
+        $getPost = Post::find($request->id);
+        $comments = $getPost->comments()->get();
+
+        return view('front.forum.storeissues.storeissuesdetail')->with('getPost', $getPost)->with('comments', $comments);
+    }
+
 }

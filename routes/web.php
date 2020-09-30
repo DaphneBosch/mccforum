@@ -18,11 +18,24 @@ Auth::routes();
 
 Route::get('/', 'HomeController@index');
 Route::get('/creations/{id}',['uses' => '\App\Http\Controllers\CreationsController@getPost']);
+Route::get('/feedback-suggestions/{id}',['uses' => '\App\Http\Controllers\FeedSuggController@getPost']);
+Route::get('/feedback-suggestions/{id}/store',['uses' => '\App\Http\Controllers\CommentController@store']);
 Route::post('/creations/{id}/store',['uses' => '\App\Http\Controllers\CommentController@store']);
 Route::get('/introductions/{id}',['uses' => '\App\Http\Controllers\IntroController@getPost']);
+Route::get('/bugreports/{id}',['uses' => '\App\Http\Controllers\BugReportsController@getPost']);
+Route::get('/storeissues/{id}',['uses' => '\App\Http\Controllers\StoreIssuesController@getPost']);
+Route::get('/staffreports/{id}',['uses' => '\App\Http\Controllers\StaffReportsController@getPost']);
+Route::get('/supportteam/{id}',['uses' => '\App\Http\Controllers\SupportTeamController@getPost']);
+Route::get('/buildersteam/{id}',['uses' => '\App\Http\Controllers\BuildersTeamController@getPost']);
+Route::get('/adminsteam/{id}',['uses' => '\App\Http\Controllers\AdminsTeamController@getPost']);
+Route::get('/off-topic/{id}',['uses' => '\App\Http\Controllers\OfftopicController@getPost']);
+Route::get('/appeals/{id}',['uses' => '\App\Http\Controllers\AppealsController@getPost']);
+Route::get('/reportusers/{id}',['uses' => '\App\Http\Controllers\ReportUserController@getPost']);
 
 Route::post('/creations/{id}/store', 'CommentController@store')->name('comment.add');
+Route::post('/feedback-suggestions/{id}/store', 'CommentController@store')->name('comment.add');
 Route::post('/creations/{id}/reply/store', 'CommentController@replyStore')->name('reply.add');
+Route::post('/feedback-suggestions/{id}/reply/store', 'CommentController@replyStore')->name('reply.add');
 
 
 Route::get('logout', '\App\Http\Controllers\Auth\LoginController@logout');

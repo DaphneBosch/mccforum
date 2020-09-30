@@ -1,11 +1,12 @@
 <div class="row">
     <div class="col-12">
-        @foreach($comments as $comment)
+        @foreach($getPost->comments as $comment)
             <div class="forumposts">
                 <div class="card bg-light mb-3 justify-content-center">
 
                     <div class="card-body">
                         <div class="row">
+                            @if($getPost )
                             @if($comment->user->profile_image == null)
                                 <div class="col-1"><p class="card-text"><img
                                             src="https://upload.wikimedia.org/wikipedia/commons/a/ad/Placeholder_no_text.svg"
@@ -20,6 +21,8 @@
                             <div class="col-1 text-center"><p class="card-text">{{ $comment->created_at }}</p></div>
                         </div>
                     </div>
+
+                    @endif
                     {{--        <form method="post" action="/creations/{{$getPost->id}}/reply/store">--}}
                     {{--            @csrf--}}
                     {{--            <div class="form-group">--}}
@@ -30,7 +33,6 @@
                     {{--        </form>--}}
                 </div>
                 @endforeach
-                {{ $comments->links() }}
             </div>
     </div>
 

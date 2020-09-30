@@ -15,6 +15,10 @@
 <div class="top">
 </div>
 
+@include('front.components.hero.hero')
+
+<hr>
+
 @yield('content')
 
 @include('front.components.footer.footer')

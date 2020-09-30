@@ -37,9 +37,8 @@ class CreationsController extends Controller
 
     public function getPost(Request $request) {
 
-        $request->id;
         $getPost = Post::find($request->id);
-        $comments = Comment::paginate(10);
+        $comments = $getPost->comments()->get();
 
         return view('front.forum.creations.creationsdetail')->with('getPost', $getPost)->with('comments', $comments);
     }

@@ -29,4 +29,12 @@ class OfftopicController extends Controller
 
         return view('front.forum.offtopic.offtopic')->with('poster', $poster)->with('posterrecent', $posterrecent)->with('registeredusers', $registeredusers);
     }
+
+    public function getPost(Request $request) {
+
+        $getPost = Post::find($request->id);
+        $comments = $getPost->comments()->get();
+
+        return view('front.forum.offtopic.offtopicdetail')->with('getPost', $getPost)->with('comments', $comments);
+    }
 }

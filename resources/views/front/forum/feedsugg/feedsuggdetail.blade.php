@@ -1,6 +1,6 @@
 @extends('layouts.layout')
 
-@section('title', 'MCC Forum | Creations')
+@section('title', 'MCC Forum | Feedback & Suggestions')
 
 @section('content')
 
@@ -11,7 +11,7 @@
                     <div class="card bg-light mb-3 justify-content-center">
                         @if($getPost)
                             <div class="card-body">
-                                <p class="card-title" style="text-transform: uppercase; font-weight: 900;  ">{{$getPost->title}}</p>
+                                <p class="card-title">{{$getPost->title}}</p>
                                 <hr>
                                 <div class="row">
                                     <div class="col-1"><p class="card-text"><img
@@ -33,18 +33,6 @@
         @include('front.components.comments.commentsDisplay')
 
         @include('front.components.comments.comments')
-
-        <div class="row">
-            <div class="col-12 text-center">
-                <form action="{{ url('/creations', ['id' => $getPost->id]) }}" method="post">
-                    <div class="deletebutton">
-                        <button class="btn btn-default" type="submit">Delete</button>
-                        @method('delete')
-                        @csrf
-                    </div>
-                </form>
-            </div>
-        </div>
     </div>
 
 

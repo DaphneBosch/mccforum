@@ -32,9 +32,9 @@ class IntroController extends Controller
 
     public function getPost(Request $request) {
 
-        $request->id;
         $getPost = Post::find($request->id);
+        $comments = $getPost->comments()->get();
 
-        return view('front.forum.introductions.introdetail')->with('getPost', $getPost);
+        return view('front.forum.introductions.introdetail')->with('getPost', $getPost)->with('comments', $comments);
     }
 }

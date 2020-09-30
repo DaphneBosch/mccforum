@@ -50,8 +50,6 @@ class PostController extends Controller
 
         return redirect()->back()->with(['status' => 'Post created!']);
 
-        return redirect()->back()->with(['status' => 'Post created!']);
-
     }
 
 //    public function storePost(){

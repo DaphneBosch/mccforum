@@ -31,4 +31,12 @@ class StaffReportsController extends Controller
             'registeredusers', $registeredusers
         );
     }
+
+    public function getPost(Request $request) {
+
+        $getPost = Post::find($request->id);
+        $comments = $getPost->comments()->get();
+
+        return view('front.forum.staffreports.staffreportsdetail')->with('getPost', $getPost)->with('comments', $comments);
+    }
 }

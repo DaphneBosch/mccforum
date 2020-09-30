@@ -32,7 +32,7 @@
                         @foreach($poster as $posts)
                             <div class="card-body">
                                 <div class="row">
-                                    <div class="col-4"><p class="card-text">{{ $posts->title }}</p></div>
+                                    <div class="col-4"><p class="card-text"><a class="nav-link" href="/off-topic/{{$posts->id}}">{{ $posts->title }}</a></p></div>
                                     <div class="col-7"><p class="card-text">{{ $posts->text }}</p></div>
                                     <div class="col-1"><p class="card-text">{{ $posts->username }}</p></div>
                                 </div>

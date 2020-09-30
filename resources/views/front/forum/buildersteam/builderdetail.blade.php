@@ -1,6 +1,6 @@
 @extends('layouts.layout')
 
-@section('title', 'MCC Forum | Creations')
+@section('title', 'MCC Forum | Builders Team')
 
 @section('content')
 
@@ -33,19 +33,6 @@
         @include('front.components.comments.commentsDisplay')
 
         @include('front.components.comments.comments')
-
-        <div class="row">
-            <div class="col-12 text-center">
-                <form action="{{ url('/creations', ['id' => $getPost->id]) }}" method="post">
-                    <div class="deletebutton">
-                        <button class="btn btn-default" type="submit">Delete</button>
-                        @method('delete')
-                        @csrf
-                    </div>
-                </form>
-            </div>
-        </div>
     </div>
-
 
 @endsection
