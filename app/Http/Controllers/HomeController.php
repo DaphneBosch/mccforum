@@ -34,4 +34,12 @@ class HomeController extends Controller
 
         return view('front.home.home')->with('posterrecent', $posterrecent)->with('newsflash', $newsflash)->with('serverpost', $serverpost)->with('registeredusers', $registeredusers);
     }
+
+    public function getPost(Request $request) {
+
+        $getPost = Post::find($request->id);
+        $comments = $getPost->comments()->get();
+
+        return view('front.forum.server.serverdetail')->with('getPost', $getPost)->with('comments', $comments);
+    }
 }

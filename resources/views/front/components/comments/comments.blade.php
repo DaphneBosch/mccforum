@@ -10,7 +10,7 @@
         <form method="post" action="/creations/{{$getPost->id}}/store">
             @csrf
             <div class="form-group text-center">
-                <textarea name="comment" class="form-control" rows="4" style="max-width: 2000px"></textarea>
+                <textarea id="mytextarea" name="comment" class="form-control" rows="4" style="max-width: 2000px"></textarea>
                 <input type="hidden" name="post_id" value="{{ $getPost->id }}"/>
             </div>
             <div class="form-group text-center">

@@ -32,8 +32,8 @@
                         @foreach($serverpost as $server)
                             <div class="card-body">
                                 <div class="row">
-                                    <div class="col-4"><p class="card-text">{{ $server->title }}</p></div>
-                                    <div class="col-7"><p class="card-text">{{ $server->text }}</p></div>
+                                    <div class="col-4"><p class="card-text"><a class="nav-link" href="/server/{{$server->id}}">{{ $server->title }}</a></p></div>
+                                    <div class="col-7"><p class="card-text">{{ \Illuminate\Support\Str::limit(strip_tags($server->text), 70) }}</p></div>
                                     <div class="col-1"><p class="card-text">{{ $server->username }}</p></div>
                                 </div>
                                 <hr>
@@ -68,8 +68,8 @@
                         @foreach($newsflash as $news)
                             <div class="card-body">
                                 <div class="row">
-                                    <div class="col-4"><p class="card-text">{{ $news->title }}</p></div>
-                                    <div class="col-7"><p class="card-text">{{ $news->text }}</p></div>
+                                    <div class="col-4"><p class="card-text"><a class="nav-link" href="/news/{{$news->id}}">{{ $news->title }}</a></p></div>
+                                    <div class="col-7"><p class="card-text">{!! \Illuminate\Support\Str::limit(strip_tags($news->text), 50) !!}</p></div>
                                     <div class="col-1"><p class="card-text">{{ $news->username }}</p></div>
                                 </div>
                                 <hr>

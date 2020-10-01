@@ -17,7 +17,7 @@
                                     </p></div>
                             @endif
                             <div class="col-2"><p class="card-text">{{ $comment->user->name }}</p></div>
-                            <div class="col-6"><p class="card-text text-center">{{ $comment->comment }}</p></div>
+                            <div class="col-6"><p class="card-text text-center">{!! $comment->comment !!}</p></div>
                             <div class="col-1 text-center"><p class="card-text">{{ $comment->created_at }}</p></div>
                         </div>
                     </div>

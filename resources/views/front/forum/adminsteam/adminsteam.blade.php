@@ -33,7 +33,7 @@
                             <div class="card-body">
                                 <div class="row">
                                     <div class="col-4"><p class="card-text"><a class="nav-link" href="/adminsteam/{{$posts->id}}">{{ $posts->title }}</a></p></div>
-                                    <div class="col-7"><p class="card-text">{{ $posts->text }}</p></div>
+                                    <div class="col-7"><p class="card-text">{{ \Illuminate\Support\Str::limit(strip_tags($posts->text), 70) }}</p></div>
                                     <div class="col-1"><p class="card-text">{{ $posts->username }}</p></div>
                                 </div>
                                 <hr>
@@ -51,7 +51,7 @@
                         @foreach($posterrecent as $recent)
                             <div class="card-body">
                                 <p class="card-text">{{$recent->title}}</p>
-                                <p class="card-text">{{$recent->category}}</p>
+                                <p class="card-text"><img src="{!!$recent->user->profile_image !!}" style="max-width: 40px; border-radius: 30%"></p>
                                 <p class="card-text">{{$recent->username}}</p>
                                 <hr>
                             </div>

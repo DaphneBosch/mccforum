@@ -35,7 +35,7 @@
                         @foreach($posterrecent as $recent)
                             <div class="card-body">
                                 <p class="card-text">{{$recent->title}}</p>
-                                <p class="card-text">{{$recent->category}}</p>
+                                <p class="card-text"><img src="{!!$recent->user->profile_image !!}" style="max-width: 40px; border-radius: 30%"></p>
                                 <p class="card-text">{{$recent->username}}</p>
                                 <hr>
                             </div>

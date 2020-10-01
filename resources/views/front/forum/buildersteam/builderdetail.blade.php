@@ -18,7 +18,7 @@
                                                 src="{{ $getPost->user->profile_image }}"
                                                 style="max-width: 70px; border-radius: 50%;"></p></div>
                                     <div class="col-1"><p class="card-text">{{ $getPost->user->name }}</p></div>
-                                    <div class="col-8 text-center"><p class="card-text">{{ $getPost->text }}</p></div>
+                                    <div class="col-8 text-center"><p class="card-text">{!! $getPost->text !!}</p></div>
                                     <div class="col-2"><p class="card-text">{{ $getPost->created_at }}</p></div>
                                 </div>
                             </div>

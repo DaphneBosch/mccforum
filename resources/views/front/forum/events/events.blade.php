@@ -32,7 +32,7 @@
                         @foreach($poster as $posts)
                             <div class="card-body">
                                 <div class="row">
-                                    <div class="col-4"><p class="card-text">{{ $posts->title }}</p></div>
+                                    <div class="col-4"><p class="card-text"><a class="nav-link" href="/events/{{$posts->id}}">{{ $posts->title }}</a></p></div>
                                     <div class="col-7"><p class="card-text">{{ $posts->text }}</p></div>
                                     <div class="col-1"><p class="card-text">{{ $posts->username }}</p></div>
                                 </div>
@@ -48,10 +48,11 @@
                 <div class="card bg-light mb-3 justify-content-center">
                     <div class="recentposts">
                         <div class="card-header"><h4>Recent posts</h4></div>
-                        @foreach($poster as $posts)
+                        @foreach($posterrecent as $recent)
                             <div class="card-body">
-                                <p class="card-text">{{$posts->title}}</p>
-                                <p class="card-text">{{$posts->username}}</p>
+                                <p class="card-text">{{$recent->title}}</p>
+                                <p class="card-text"><img src="{!!$recent->user->profile_image !!}" style="max-width: 40px; border-radius: 30%"></p>
+                                <p class="card-text">{{$recent->username}}</p>
                                 <hr>
                             </div>
 

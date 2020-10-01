@@ -3,45 +3,66 @@
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="57587300-32a3-4e9d-bda1-983f511636b2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/resources/views/front/forum/events/eventsdetail.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/front/forum/news/newsdetail.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/front/forum/server/serverdetail.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/mccforum.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/mccforum.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Comment.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Comment.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AdminsTeamController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AdminsTeamController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AppealsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AppealsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/BugReportsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/BugReportsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/BuildersTeamController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/BuildersTeamController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CommentController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CommentController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CreationsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CreationsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/FeedSuggController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/FeedSuggController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/IntroController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/IntroController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/OfftopicController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/OfftopicController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PostController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PostController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ReportUserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ReportUserController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/StaffReportsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/StaffReportsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/StoreIssuesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/StoreIssuesController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/SupportTeamController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/SupportTeamController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Post.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Post.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_08_31_100314_create_posts_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_08_31_100314_create_posts_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/slide.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/slide.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/sass/home/home.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/home/home.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/EventsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/EventsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/NewsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/NewsController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/front/components/comments/comments.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/components/comments/comments.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/front/components/comments/commentsDisplay.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/components/comments/commentsDisplay.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/front/components/footer/footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/components/footer/footer.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/front/components/topbar/topbar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/components/topbar/topbar.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/front/forum/adminsteam/adminsteam.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/forum/adminsteam/adminsteam.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/front/forum/adminsteam/adminsteamdetail.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/forum/adminsteam/adminsteamdetail.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/front/forum/appeals/appeals.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/forum/appeals/appeals.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/front/forum/appeals/appealsdetail.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/forum/appeals/appealsdetail.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/front/forum/bugreports/bugreportdetail.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/forum/bugreports/bugreportdetail.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/front/forum/bugreports/bugreports.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/forum/bugreports/bugreports.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/front/forum/buildersteam/builderdetail.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/forum/buildersteam/builderdetail.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/front/forum/buildersteam/buildersteam.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/forum/buildersteam/buildersteam.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/front/forum/creations/creations.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/forum/creations/creations.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/front/forum/creations/creationsdetail.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/forum/creations/creationsdetail.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/front/forum/events/events.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/forum/events/events.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/front/forum/feedsugg/feedsugg.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/forum/feedsugg/feedsugg.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/front/forum/feedsugg/feedsuggdetail.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/forum/feedsugg/feedsuggdetail.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/front/forum/forum.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/forum/forum.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/front/forum/introductions/introdetail.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/forum/introductions/introdetail.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/front/forum/introductions/introductions.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/forum/introductions/introductions.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/front/forum/news/news.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/forum/news/news.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/front/forum/offtopic/offtopic.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/forum/offtopic/offtopic.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/front/forum/offtopic/offtopicdetail.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/forum/offtopic/offtopicdetail.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/front/forum/reportusers/reportuserdetail.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/forum/reportusers/reportuserdetail.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/front/forum/reportusers/reportusers.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/forum/reportusers/reportusers.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/front/forum/staffreports/staffreports.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/forum/staffreports/staffreports.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/front/forum/staffreports/staffreportsdetail.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/forum/staffreports/staffreportsdetail.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/front/forum/storeissues/storeissues.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/forum/storeissues/storeissues.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/front/forum/storeissues/storeissuesdetail.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/forum/storeissues/storeissuesdetail.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/front/forum/supportteam/supportteam.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/forum/supportteam/supportteam.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/front/forum/supportteam/supportteamdetail.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/forum/supportteam/supportteamdetail.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/front/help/help.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/help/help.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/front/home/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/home/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/front/newpost/newpost.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/newpost/newpost.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/layout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/layout.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
@@ -259,11 +280,23 @@
       <workItem from="1601397852567" duration="2945000" />
       <workItem from="1601457123952" duration="7887000" />
       <workItem from="1601469411301" duration="280000" />
+      <workItem from="1601534623223" duration="8572000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="WindowStateProjectService">
     <state x="336" y="361" key="#SQL_Dialects" timestamp="1599219646208">

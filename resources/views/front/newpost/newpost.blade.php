@@ -70,7 +70,7 @@
 
                 <div>
                     <label>Your post</label>
-                    <textarea name="text"></textarea>
+                    <textarea id="mytextarea" name="text"></textarea>
 
                 </div>
                 <div>

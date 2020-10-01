@@ -31,4 +31,12 @@ class EventsController extends Controller
             'registeredusers', $registeredusers
         );
     }
+
+    public function getPost(Request $request) {
+
+        $getPost = Post::find($request->id);
+        $comments = $getPost->comments()->get();
+
+        return view('front.forum.events.eventsdetail')->with('getPost', $getPost)->with('comments', $comments);
+    }
 }
